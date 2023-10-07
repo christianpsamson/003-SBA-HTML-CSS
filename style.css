@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+body {
+  background-color: black;
+}
+.container-top-section {
+  background-color: black;
+  max-width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.social-media {
+  width: 50vw;
+}
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 3rem;
+}
+.fa-brands {
+  color: white;
+  font-size: 30px;
+  opacity: 50%;
+  padding-top: 2rem;
+}
+
+.buy-button-section {
+  width: 35vw;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2rem;
+}
+.text-animation-box {
+  width: 30rem;
+  height: 6rem;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.text-animation-section {
+  height: 18rem;
+  font-size: 2vw;
+  position: absolute;
+  animation: text-animation ease-in-out 10s backwards;
+}
+@keyframes text-animation {
+  0% {
+    transform: translateY(100%%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.text-animation {
+  color: rgb(214, 110, 240);
+  opacity: 50%;
+}
+
+.buy-button {
+  width: 20rem;
+  height: 6rem;
+  font-size: 1.125rem;
+  border-radius: 50px;
+  background-image: linear-gradient(45deg, #703aef, #005dfd);
+  color: white;
+  text-transform: uppercase;
+  animation: buy 5s ease infinite;
+}
+@keyframes buy {
+  0% {
+    background-image: linear-gradient(0deg, #703aef, #005dfd);
+  }
+  8% {
+    background-image: linear-gradient(30deg, #703aef, #005dfd);
+  }
+  16% {
+    background-image: linear-gradient(60deg, #703aef, #005dfd);
+  }
+  24% {
+    background-image: linear-gradient(90deg, #703aef, #005dfd);
+  }
+  32% {
+    background-image: linear-gradient(120deg, #703aef, #005dfd);
+  }
+  40% {
+    background-image: linear-gradient(150deg, #703aef, #005dfd);
+  }
+  48% {
+    background-image: linear-gradient(180deg, #703aef, #005dfd);
+  }
+  56% {
+    background-image: linear-gradient(210deg, #703aef, #005dfd);
+  }
+  64% {
+    background-image: linear-gradient(240deg, #703aef, #005dfd);
+  }
+  72% {
+    background-image: linear-gradient(270deg, #703aef, #005dfd);
+  }
+  80% {
+    background-image: linear-gradient(300deg, #703aef, #005dfd);
+  }
+  88% {
+    background-image: linear-gradient(330deg, #703aef, #005dfd);
+  }
+  100% {
+    background-image: linear-gradient(360deg, #703aef, #005dfd);
+  }
+}
+
+.hero-image-section {
+  width: 100vw;
+  display: flex;
+  display: flex;
+  justify-content: space-around;
+}
+.hero-image-01 {
+  width: 70%;
+  max-width: 2000px;
+  min-width: 1300px;
+  position: relative;
+}
+
+.concert-title {
+  font-family: "Pacifico", cursive;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  opacity: 90%;
+}
+.concert-slogan {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 70vh;
+}
+.concert-date {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+}
+.nav-container {
+  text-align: center;
+  background-color: black;
+  padding: 2rem;
+}
+.nav-menu {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  padding: 1vw 2vw;
+  transition: font-size 0.3s ease;
+  font-size: 1.5rem;
+}
+.nav-menu:hover {
+  font-size: 2vw;
+}
+.details-button{
+  color: rgb(105, 103, 103);
+}
+/* GRID SECTION */
+.schedule-table {
+  font-size: 1.5rem;
+}
+.time {
+  background-color: #660f63;
+  align-self: center;
+}
+
+.purchase-container{
+padding:10rem;
+font-size: 2rem;
+}
+.form-container{
+  padding: 20rem;
+}
+
+.dropdown-button{
+  font-size: 2rem;
+  padding: 2rem;
+  margin:2rem;
+  border-radius: 30px;
+}
+.submit-button{
+  border-radius:15px;
+  padding: 1rem;
+}
+@media (min-width: 1200px) {
+  .concert-title {
+    font-size: 6vw;
+  }
+  .concert-slogan {
+    font-size: 3vw;
+  }
+  .concert-date {
+    font-size: 1.5vw;
+    top: 78vh;
+  }
+}
+@media (max-width: 1200px) {
+  .concert-title {
+    font-size: 15vw;
+  }
+  .concert-slogan {
+    font-size: 4vw;
+  }
+  .concert-date {
+    top: 75vh;
+  }
+}
+@media (max-width: 768px) {
+  .concert-title {
+    font-size: 18vw;
+  }
+  .concert-slogan {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .concert-title {
+    font-size: 18vw;
+  }
+  .concert-slogan {
+    font-size: 6vw;
+  }
+}

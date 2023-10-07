@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy</title>
+    <!-- Dropdown only works with 3.4.1, so the following link was added -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid purchase-container">
+      <!-- Nav Bar -->
+      <div class="nav-container">
+        <a href="index.html" class="nav-menu">welcome</a
+        ><a href="artists.html" class="nav-menu">artists</a
+        ><a href="schedule.html" class="nav-menu schedule">schedule</a
+        ><a href="#" class="nav-menu details-button">details</a>
+      </div>
+      <!-- Nav Bar -->
+      <div class="container-fluid form-container container-md">
+        <!-- Dropdown  -->
+        <div class="dropdown text-center">
+          <button
+            class="btn btn-primary dropdown-toggle dropdown-button"
+            type="button"
+            data-toggle="dropdown"
+          >
+            How many tickets do you need?
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">1 Ticket</a></li>
+            <li><a href="#">2 Tickets</a></li>
+            <li><a href="#">3 Tickets</a></li>
+            <li><a href="#">4 Tickets</a></li>
+            <li><a href="#">5 Tickets</a></li>
+            <li><a href="#">6 Tickets</a></li>
+            <li><a href="#">7 Tickets</a></li>
+            <li><a href="#">8 Tickets</a></li>
+            <li><a href="#">9 Tickets</a></li>
+            <li><a href="#">10 Tickets</a></li>
+          </ul>
+        </div>
+        <!-- Dropdown -->
+        <!-- Form -->
+
+        <form>
+          <div class="email-section m-5 p-5">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text text-light">
+                Your tickets will be sent thru email.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+
+              <!-- check box -->
+              <label class="form-check-label" for="exampleCheck1"
+                >Check me out</label
+              >
+              <!-- check box -->
+            </div>
+          </div>
+
+          <hr />
+          <div class="container-fluid address-section m-5 p-5">
+            <h1 class="text-center">Billing Address</h1>
+            <div class="mb-3">
+              <label for="inputCountry" class="form-label">Country</label>
+              <input type="text" class="form-control" id="inputName" />
+              <div id="inputCountry" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+              <label for="inputName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="inputName" />
+              <div id="inputName" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputName" />
+              <div id="inputAddress" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+              <label for="inputAddress" class="form-label"></label>
+              <input type="text" class="form-control" id="inputName" />
+              <div id="inputAddress" class="form-text"></div>
+            </div>
+            <div class="row city-state">
+              <div class="col-6 mb-3">
+                <label for="inputAddress" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputName" />
+                <div id="inputAddress" class="form-text"></div>
+              </div>
+              <div class="col-6 mb-3">
+                <label for="inputAddress" class="form-label">State</label>
+                <input type="text" class="form-control" id="inputName" />
+                <div id="inputAddress" class="form-text"></div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="inputAddress" class="form-label">Zip Code</label>
+              <input type="text" class="form-control" id="inputName" />
+              <div id="inputAddress" class="form-text"></div>
+            </div>
+          </div>
+        </form>
+        <!-- Form -->
+
+        <!-- Submit -->
+        <div class="text-center p-5">
+          <a href="index.html" class="btn btn-primary fs-1 submit-button">Submit</a>
+        </div>
+        <!-- Submit -->`
+      </div>
+    </div>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+      .nav-menu {
+        font-size: 2.5rem;
+      }
+      .image {
+        padding-bottom: 30rem;
+      }
+      .nav-menu:hover {
+        font-size: 1.25vw;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/bbf1fad890.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
